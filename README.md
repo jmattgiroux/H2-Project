@@ -8,11 +8,12 @@ Environment first time setup:
     1. Install software listed under "Development Environment Requirements" in this README file
     2. Install Android Virtual Device according to AVDSetup screenshots in References/EnvironmentSetup/
     3. Follow steps under Environment Setup Cycle section in this README file
+    4. Complete Collaboration tests in References/EnvironmentSetup/ 
 
 
 Environment Setup Cycle:
     1. Pull from main branch through Git
-    2. Open Android Studio
+    2. Open Android Studio wait for processes to happen (see the bottom bar for progress. If any message shows up in the event log in red, post a screenshot on the team slack and try to fix it with google)
     3. Import Settings from settings zip if you haven’t already (and that you have the right virtual device selected in the AVD manager) – restart if prompted
     4. Update Android Studio, Gradle, etc, if prompted (check the bottom bar of Android Studio for updates or messages)
     5. Wait for Indexing, Gradle to set up (see the bottom bar to see the progress)
