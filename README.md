@@ -11,6 +11,8 @@ Environment first time setup:
     1. Install software listed under "Development Environment Requirements" in this README file
 	
 	1.1 Complete this tutorial if you haven't used Android Studio before: https://developer.android.com/training/basics/firstapp
+	1.2 An extra tutorial: https://codelabs.developers.google.com/codelabs/build-your-first-android-app/#0
+	1.3 Link to a course: https://developer.android.com/courses/fundamentals-training/overview-v2
 	
     2. Install Android Virtual Device according to AVDSetup screenshots in References/EnvironmentSetup/
 	
