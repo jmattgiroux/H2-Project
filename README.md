@@ -2,6 +2,14 @@
 
 Project Plan Document: https://drive.google.com/file/d/1AZamZZdtZesQSDiQNKk-OPkwCMsLyOcn/view?usp=sharing
 
+Helpful Websites: https://developer.android.com/studio/run/emulator 
+
+Environment first time setup:
+    1. Install software listed under "Development Environment Requirements" in this README file
+    2. Install Android Virtual Device according to AVDSetup screenshots in References/EnvironmentSetup/
+    3. Follow steps under Environment Setup Cycle section in this README file
+
+
 Environment Setup Cycle:
     1. Pull from main branch through Git
     2. Open Android Studio
