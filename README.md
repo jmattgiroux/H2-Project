@@ -65,5 +65,7 @@ Software Installed:
     git version 2.25.1 or later
 
     Android Studio version 4.0.2 or later
+		Release Notes: https://developer.android.com/studio/releases
+		Troubleshooting: https://developer.android.com/studio/troubleshoot
 
-    openJDK version 11.0.8 or later
+    openJDK version 11.0.8 or later (comes bundled with Android Studio)
