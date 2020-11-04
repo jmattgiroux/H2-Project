@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">H2-Project</string>
+    <string name="app_name">h2project</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -9,4 +9,35 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_scavenger_hunt">ScavengerHunt</string>
+
+    <!-- Strings used for HomeScreen fragments -->
+    <!-- Fragment 1 -->
+    <string name="home_screen_fragment_1_label_1">Welcome!</string>
+    <string name="home_screen_fragment_1_label_2">Play Scavenger Hunt</string>
+    <string name="home_screen_fragment_1_label_3">Play Picture Hunt</string>
+    <string name="home_screen_fragment_1_label_4">Play Race to Win</string>
+    <string name="home_screen_fragment_1_label_5">Game Instructions</string>
+    <string name="home_screen_fragment_1_label_6">Exit</string>
+    <string name="home_screen_fragment_1_label_7">Home Screen!7</string>
+
+
+    <!-- Strings used for ScavengerHunt fragments -->
+    <!-- Fragment 1 -->
+    <string name="scavenger_hunt_fragment_1_label_1">Scavenger Hunt!1</string>
+    <string name="scavenger_hunt_fragment_1_label_2">Scavenger Hunt!2</string>
+    <string name="scavenger_hunt_fragment_1_label_3">Scavenger Hunt!3</string>
+    <string name="scavenger_hunt_fragment_1_label_4">Scavenger Hunt!4</string>
+    <string name="scavenger_hunt_fragment_1_label_5">Scavenger Hunt!5</string>
+    <string name="scavenger_hunt_fragment_1_label_6">Scavenger Hunt!6</string>
+    <string name="scavenger_hunt_fragment_1_label_7">Scavenger Hunt!7</string>
+
+    <!-- Fragment 2 -->
+    <string name="scavenger_hunt_fragment_2_label_1">Scavenger Hunt!1</string>
+    <string name="scavenger_hunt_fragment_2_label_2">Scavenger Hunt!2</string>
+    <string name="scavenger_hunt_fragment_2_label_3">Scavenger Hunt!3</string>
+    <string name="scavenger_hunt_fragment_2_label_4">Scavenger Hunt!4</string>
+    <string name="scavenger_hunt_fragment_2_label_5">Scavenger Hunt!5</string>
+    <string name="scavenger_hunt_fragment_2_label_6">Scavenger Hunt!6</string>
+    <string name="scavenger_hunt_fragment_2_label_7">Scavenger Hunt!7</string>
 </resources>

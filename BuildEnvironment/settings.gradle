@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "H2-Project"
+rootProject.name = "h2project"

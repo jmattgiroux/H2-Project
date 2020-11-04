@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.h2_project.FirstFragment"
+        android:name="com.example.h2project.HomeScreenFragment1"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/HomeScreenFragment1">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -17,9 +17,29 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.h2_project.SecondFragment"
+        android:name="com.example.h2project.HomeScreenFragment2"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/home_screen_fragment_2">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.h2project.ScavengerHuntFragment1"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/scavenger_hunt_fragment_1">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.h2project.ScavengerHuntFragment2"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/scavenger_hunt_fragment_2">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
