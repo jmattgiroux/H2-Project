@@ -1,5 +1,6 @@
 package com.example.h2project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,11 +24,11 @@ public class HomeScreenFragment1 extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.home_screen_fragment_1_button_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(HomeScreenFragment1.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                Intent intent = new Intent(getActivity(), ScavengerHunt.class);
+                startActivity(intent);
             }
         });
     }

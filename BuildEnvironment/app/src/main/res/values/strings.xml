@@ -11,33 +11,182 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_scavenger_hunt">ScavengerHunt</string>
 
+    <!-- Strings that are reused -->
+    <string name="back_button_label">Back</string>
+
     <!-- Strings used for HomeScreen fragments -->
     <!-- Fragment 1 -->
-    <string name="home_screen_fragment_1_label_1">Welcome!</string>
-    <string name="home_screen_fragment_1_label_2">Play Scavenger Hunt</string>
-    <string name="home_screen_fragment_1_label_3">Play Picture Hunt</string>
-    <string name="home_screen_fragment_1_label_4">Play Race to Win</string>
-    <string name="home_screen_fragment_1_label_5">Game Instructions</string>
-    <string name="home_screen_fragment_1_label_6">Exit</string>
-    <string name="home_screen_fragment_1_label_7">Home Screen!7</string>
+    <string name="home_screen_fragment_1_text_1">Welcome!</string>
+    <string name="home_screen_fragment_1_button_1">Play Scavenger Hunt</string>
+    <string name="home_screen_fragment_1_button_2">Play Picture Hunt</string>
+    <string name="home_screen_fragment_1_button_3">Play Race to Win</string>
+    <string name="home_screen_fragment_1_button_4">Game Instructions</string>
+    <string name="home_screen_fragment_1_button_5">Exit</string>
+    <string name="home_screen_fragment_1_button_6">Home Screen!7</string>
 
 
     <!-- Strings used for ScavengerHunt fragments -->
     <!-- Fragment 1 -->
-    <string name="scavenger_hunt_fragment_1_label_1">Scavenger Hunt!1</string>
-    <string name="scavenger_hunt_fragment_1_label_2">Scavenger Hunt!2</string>
-    <string name="scavenger_hunt_fragment_1_label_3">Scavenger Hunt!3</string>
-    <string name="scavenger_hunt_fragment_1_label_4">Scavenger Hunt!4</string>
-    <string name="scavenger_hunt_fragment_1_label_5">Scavenger Hunt!5</string>
-    <string name="scavenger_hunt_fragment_1_label_6">Scavenger Hunt!6</string>
-    <string name="scavenger_hunt_fragment_1_label_7">Scavenger Hunt!7</string>
+    <string name="scavenger_hunt_fragment_1_text_1">Choose a Category:</string>
+    <string name="scavenger_hunt_fragment_1_button_1">School</string>
+    <string name="scavenger_hunt_fragment_1_button_2">Home</string>
+    <string name="scavenger_hunt_fragment_1_button_3">Outside</string>
+    <string name="scavenger_hunt_fragment_1_button_4">~~~~~~~~~</string>
+    <string name="scavenger_hunt_fragment_1_button_5">~~~~~~~~~</string>
+    <string name="scavenger_hunt_fragment_1_button_6">~~~~~~~~~</string>
 
     <!-- Fragment 2 -->
-    <string name="scavenger_hunt_fragment_2_label_1">Scavenger Hunt!1</string>
-    <string name="scavenger_hunt_fragment_2_label_2">Scavenger Hunt!2</string>
-    <string name="scavenger_hunt_fragment_2_label_3">Scavenger Hunt!3</string>
-    <string name="scavenger_hunt_fragment_2_label_4">Scavenger Hunt!4</string>
-    <string name="scavenger_hunt_fragment_2_label_5">Scavenger Hunt!5</string>
-    <string name="scavenger_hunt_fragment_2_label_6">Scavenger Hunt!6</string>
-    <string name="scavenger_hunt_fragment_2_label_7">Scavenger Hunt!7</string>
+    <string name="scavenger_hunt_fragment_2_text_1">1:00</string>
+    <string name="scavenger_hunt_fragment_2_text_2">1:00</string>
+    <string name="scavenger_hunt_fragment_2_text_3">1:00</string>
+    <string name="scavenger_hunt_fragment_2_button_1">Check Mark</string>
+    <string name="scavenger_hunt_fragment_2_button_2">Generate New Word</string>
+    <string name="scavenger_hunt_fragment_2_button_3">Quit</string>
+    <string name="scavenger_hunt_fragment_2_button_4">Scavenger Hunt!5</string>
+    <string name="scavenger_hunt_fragment_2_button_5">Scavenger Hunt!6</string>
+    <string name="scavenger_hunt_fragment_2_button_6">Scavenger Hunt!7</string>
+
+    <!-- Fragment 3 -->
+    <string name="scavenger_hunt_fragment_3_text_1">Great Job!</string>
+    <string name="scavenger_hunt_fragment_3_text_2">*Number of Points*</string>
+    <string name="scavenger_hunt_fragment_3_text_3">*Number of Missed Words</string>
+    <string name="scavenger_hunt_fragment_3_button_1">Play Again!</string>
+    <string name="scavenger_hunt_fragment_3_button_2">Return to Home</string>
+    <string name="scavenger_hunt_fragment_3_button_3">Scavenger Hunt!4</string>
+    <string name="scavenger_hunt_fragment_3_button_4">Scavenger Hunt!5</string>
+    <string name="scavenger_hunt_fragment_3_button_5">Scavenger Hunt!6</string>
+    <string name="scavenger_hunt_fragment_3_button_6">Scavenger Hunt!7</string>
+
+    <!-- Strings used for Race to Win fragments -->
+    <!-- Fragment 0 -->
+    <string name="race_to_win_fragment_0_text_1">Connect!</string>
+    <string name="race_to_win_fragment_0_text_2">Code to Connect</string>
+    <string name="race_to_win_fragment_0_text_3">Number of People Connected</string>
+    <string name="race_to_win_fragment_0_text_4">Join Another Team</string>
+    <string name="race_to_win_fragment_0_text_5">Input Code Here</string>
+    <string name="race_to_win_fragment_0_button_1">Done</string>
+    <string name="race_to_win_fragment_0_button_2">Generate New Code</string>
+    <string name="race_to_win_fragment_0_button_3">Join</string>
+
+    <!-- Fragment 1 -->
+    <string name="race_to_win_fragment_1_text_1">Enter Your Name</string>
+    <string name="race_to_win_fragment_1_text_2">Enter Player Names</string>
+    <string name="race_to_win_fragment_1_text_3">Players: </string>
+    <string name="race_to_win_fragment_1_text_4">Players Ready: #</string>
+    <string name="race_to_win_fragment_1_button_1">Ready</string>
+    <string name="race_to_win_fragment_1_button_2">~~~~~~~~~</string>
+    <string name="race_to_win_fragment_1_button_3">~~~~~~~~~</string>
+    <string name="race_to_win_fragment_1_button_4">~~~~~~~~~</string>
+    <string name="race_to_win_fragment_1_button_5">~~~~~~~~~</string>
+    <string name="race_to_win_fragment_1_button_6">~~~~~~~~~</string>
+
+    <!-- Fragment 2 -->
+    <string name="race_to_win_fragment_2_text_1">Choose a Category:</string>
+    <string name="race_to_win_fragment_2_button_1">School</string>
+    <string name="race_to_win_fragment_2_button_2">Home</string>
+    <string name="race_to_win_fragment_2_button_3">Outside</string>
+    <string name="race_to_win_fragment_2_button_4">~~~~~~~~~</string>
+    <string name="race_to_win_fragment_2_button_5">~~~~~~~~~</string>
+    <string name="race_to_win_fragment_2_button_6">~~~~~~~~~</string>
+
+    <!-- Fragment 3 -->
+    <string name="race_to_win_fragment_3_text_1">3..2..1..Go!</string>
+    <string name="race_to_win_fragment_3_text_2">*Word*</string>
+    <string name="race_to_win_fragment_3_text_3">*Number of Missed Words</string>
+    <string name="race_to_win_fragment_3_button_1">Generate</string>
+    <string name="race_to_win_fragment_3_button_2">Quit</string>
+    <string name="race_to_win_fragment_3_button_3">Scavenger Hunt!4</string>
+    <string name="race_to_win_fragment_3_button_4">Scavenger Hunt!5</string>
+    <string name="race_to_win_fragment_3_button_5">Scavenger Hunt!6</string>
+    <string name="race_to_win_fragment_3_button_6">Scavenger Hunt!7</string>
+
+    <!-- Fragment 4 -->
+    <string name="race_to_win_fragment_4_text_1">Well Done!</string>
+    <string name="race_to_win_fragment_4_text_2">1st</string>
+    <string name="race_to_win_fragment_4_text_3">*Player Name*</string>
+    <string name="race_to_win_fragment_4_text_4">*Number of Points*</string>
+    <string name="race_to_win_fragment_4_text_5">*2nd*</string>
+    <string name="race_to_win_fragment_4_text_6">*Player Name*</string>
+    <string name="race_to_win_fragment_4_text_7">*Number of Points*</string>
+    <string name="race_to_win_fragment_4_text_8">*3rd*</string>
+    <string name="race_to_win_fragment_4_text_9">*Player Name*</string>
+    <string name="race_to_win_fragment_4_text_10">*Number of Points*</string>
+    <string name="race_to_win_fragment_4_button_1">Play Again!</string>
+    <string name="race_to_win_fragment_4_button_2">Return to Home</string>
+    <string name="race_to_win_fragment_4_button_3">Scavenger Hunt!4</string>
+    <string name="race_to_win_fragment_4_button_4">Scavenger Hunt!5</string>
+    <string name="race_to_win_fragment_4_button_5">Scavenger Hunt!6</string>
+    <string name="race_to_win_fragment_4_button_6">Scavenger Hunt!7</string>
+
+    <!-- Strings used for Picture Hunt fragments -->
+    <!-- Fragment 0 -->
+    <string name="picture_hunt_fragment_0_text_1">Connect!</string>
+    <string name="picture_hunt_fragment_0_text_2">Code to Connect</string>
+    <string name="picture_hunt_fragment_0_text_3">Number of People Connected</string>
+    <string name="picture_hunt_fragment_0_text_4">Join Another Team</string>
+    <string name="picture_hunt_fragment_0_text_5">Input Code Here</string>
+    <string name="picture_hunt_fragment_0_button_1">Done</string>
+    <string name="picture_hunt_fragment_0_button_2">Generate New Code</string>
+    <string name="picture_hunt_fragment_0_button_3">Join</string>
+
+    <!-- Fragment 1 -->
+    <string name="picture_hunt_fragment_1_text_1">Enter Your Name</string>
+    <string name="picture_hunt_fragment_1_text_2">Enter Player Names</string>
+    <string name="picture_hunt_fragment_1_text_3">Players: </string>
+    <string name="picture_hunt_fragment_1_text_4">Players Ready: #</string>
+    <string name="picture_hunt_fragment_1_button_1">Ready</string>
+    <string name="picture_hunt_fragment_1_button_2">~~~~~~~~~</string>
+    <string name="picture_hunt_fragment_1_button_3">~~~~~~~~~</string>
+    <string name="picture_hunt_fragment_1_button_4">~~~~~~~~~</string>
+    <string name="picture_hunt_fragment_1_button_5">~~~~~~~~~</string>
+    <string name="picture_hunt_fragment_1_button_6">~~~~~~~~~</string>
+
+    <!-- Fragment 2 -->
+    <string name="picture_hunt_fragment_2_text_1">Choose a Category:</string>
+    <string name="picture_hunt_fragment_2_button_1">School</string>
+    <string name="picture_hunt_fragment_2_button_2">Home</string>
+    <string name="picture_hunt_fragment_2_button_3">Outside</string>
+    <string name="picture_hunt_fragment_2_button_4">~~~~~~~~~</string>
+    <string name="picture_hunt_fragment_2_button_5">~~~~~~~~~</string>
+    <string name="picture_hunt_fragment_2_button_6">~~~~~~~~~</string>
+
+    <!-- Fragment 3 -->
+    <string name="picture_hunt_fragment_3_text_1">3..2..1..Go!</string>
+    <string name="picture_hunt_fragment_3_text_2">*Word*</string>
+    <string name="picture_hunt_fragment_3_text_3">*Number of Missed Words</string>
+    <string name="picture_hunt_fragment_3_button_1">Generate</string>
+    <string name="picture_hunt_fragment_3_button_2">Quit</string>
+    <string name="picture_hunt_fragment_3_button_3">Scavenger Hunt!4</string>
+    <string name="picture_hunt_fragment_3_button_4">Scavenger Hunt!5</string>
+    <string name="picture_hunt_fragment_3_button_5">Scavenger Hunt!6</string>
+    <string name="picture_hunt_fragment_3_button_6">Scavenger Hunt!7</string>
+
+    <!-- Fragment 4 -->
+    <string name="picture_hunt_fragment_4_text_1">3..2..1..Go!</string>
+    <string name="picture_hunt_fragment_4_text_2">*Word*</string>
+    <string name="picture_hunt_fragment_4_text_3">*Number of Missed Words</string>
+    <string name="picture_hunt_fragment_4_button_1">Generate</string>
+    <string name="picture_hunt_fragment_4_button_2">Leave Game</string>
+    <string name="picture_hunt_fragment_4_button_3">Scavenger Hunt!4</string>
+    <string name="picture_hunt_fragment_4_button_4">Scavenger Hunt!5</string>
+    <string name="picture_hunt_fragment_4_button_5">Scavenger Hunt!6</string>
+    <string name="picture_hunt_fragment_4_button_6">Scavenger Hunt!7</string>
+
+    <!-- Fragment 5 -->
+    <string name="picture_hunt_fragment_5_text_1">Well Done!</string>
+    <string name="picture_hunt_fragment_5_text_2">1st</string>
+    <string name="picture_hunt_fragment_5_text_3">*Player Name*</string>
+    <string name="picture_hunt_fragment_5_text_4">*Number of Points*</string>
+    <string name="picture_hunt_fragment_5_text_5">*2nd*</string>
+    <string name="picture_hunt_fragment_5_text_6">*Player Name*</string>
+    <string name="picture_hunt_fragment_5_text_7">*Number of Points*</string>
+    <string name="picture_hunt_fragment_5_text_8">*3rd*</string>
+    <string name="picture_hunt_fragment_5_text_9">*Player Name*</string>
+    <string name="picture_hunt_fragment_5_text_10">*Number of Points*</string>
+    <string name="picture_hunt_fragment_5_button_1">Play Again!</string>
+    <string name="picture_hunt_fragment_5_button_2">Return to Home</string>
+    <string name="picture_hunt_fragment_5_button_3">Scavenger Hunt!4</string>
+    <string name="picture_hunt_fragment_5_button_4">Scavenger Hunt!5</string>
+    <string name="picture_hunt_fragment_5_button_5">Scavenger Hunt!6</string>
+    <string name="picture_hunt_fragment_5_button_6">Scavenger Hunt!7</string>
 </resources>
