@@ -10,18 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.H2project">
         <activity
+            android:name=".Instructions"
+            android:label="@string/title_activity_instructions"
+            android:theme="@style/Theme.H2project.NoActionBar"></activity>
+        <activity
+            android:name=".PictureHunt"
+            android:label="@string/title_activity_picture_hunt"
+            android:theme="@style/Theme.H2project.NoActionBar" />
+        <activity android:name=".RaceToWin" />
+        <activity
             android:name=".HomeScreen"
             android:label="@string/app_name"
             android:theme="@style/Theme.H2project.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ScavengerHunt"
             android:label="@string/title_activity_scavenger_hunt"
-            android:theme="@style/Theme.H2project.NoActionBar"></activity>
+            android:theme="@style/Theme.H2project.NoActionBar" />
     </application>
 
 </manifest>
