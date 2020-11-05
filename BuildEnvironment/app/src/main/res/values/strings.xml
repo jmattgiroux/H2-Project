@@ -23,8 +23,7 @@
     <string name="home_screen_fragment_1_button_4">Game Instructions</string>
     <string name="home_screen_fragment_1_button_5">Exit</string>
     <string name="home_screen_fragment_1_button_6">Home Screen!7</string>
-
-
+    
     <!-- Strings used for Scavenger Hunt fragments -->
     <!-- Fragment 1 -->
     <string name="scavenger_hunt_fragment_1_text_1">Choose a Category:</string>
