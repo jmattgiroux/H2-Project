@@ -1,7 +1,12 @@
 //Author: Jeanette Eldredge
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Generator {
     // Declaration of Arrays
@@ -12,83 +17,103 @@ public class Generator {
     public static String previousInput;
 
     public Generator() {
-    input = "";
-    fillInLists();   
+        input = "";
+        fillInLists("school");
+        fillInLists("home");
+        fillInLists("outside");
+    }
+    private int count = 100;
+    public void generate(String input) {
+        Random rand = new Random();
+        // The random generator does number 0 - the limit so saying that
+        // the lim is 6 will generate a number out of 7 numbers.
+        // This will need to be changed for bigger lists.
+        boolean NWorCHK = false;
+        if ((input.equals("new")) || input.equals("check")) {
+            NWorCHK = true;
+            input = previousInput;
+        }
+
+        if(count == 0)
+        {
+            fillInLists(input);
+            count =100;
+        }
+
+        int item = rand.nextInt(count);
+
+        if (input.equals("school")) {
+            if(SchoolWords.size() == 0)
+            {
+
+            }
+            System.out.println(SchoolWords.get(item));
+            SchoolWords.remove(item);
+            count -= 1;
+        }
+
+        else if (input.equals("home")) {
+            System.out.println(HomeWords.get(item));
+            HomeWords.remove(item);
+            count -= 1;
+        }
+
+        else if (input.equals("outside")) {
+            System.out.println(OutsideWords.get(item));
+            OutsideWords.remove(item);
+            count -= 1;
+        }
+
+        if (NWorCHK == false) {
+            previousInput = input;
+        }
     }
 
-    public static void generate(String input) {
-    Random rand = new Random();
-    // The random generator does number 0 - the limit so saying that
-    // the lim is 6 will generate a number out of 7 numbers.
-    // This will need to be changed for bigger lists.
-    int item = rand.nextInt(6);
-    boolean NWorCHK = false;
-    if((input.equals("new")) || input.equals("check"))
-    {
-        NWorCHK = true;
-        input = previousInput;
-    }
+    public static void fillInLists(String input) {
+        String file1 = new File("school.txt").getAbsolutePath();
+        String file2 = new File("home.txt").getAbsolutePath();
+        String file3 = new File("outside.txt").getAbsolutePath();
+        
+        Path list1 = Paths.get(file1);
+        Path list2 = Paths.get(file2);
+        Path list3 = Paths.get(file3);
+        
+        if(input.equals("school"))
+        {
+            Scanner schoollist;
+            try {
+                schoollist = new Scanner(new File(list1.toString()));
+                while(schoollist.hasNext()){ SchoolWords.add(schoollist.nextLine()); }
+                schoollist.close();
+            } 
+            catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
 
-    if (input.equals("school")) {
-        System.out.println(SchoolWords.get(item));
-    }
+        if(input.equals("home"))
+        {
+            try{
+                Scanner homelist = new Scanner(new File(list2.toString()));
+                while(homelist.hasNext()){ HomeWords.add(homelist.nextLine()); }
+                homelist.close();
+            }
+            catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }   
 
-    else if (input.equals("home")) {
-        System.out.println(HomeWords.get(item));
-    }
-
-    else if (input.equals("outside")) {
-        System.out.println(OutsideWords.get(item));
-    }
-
-    if(NWorCHK == false)
-    {
-        previousInput = input;
-    }
-    }
-
-    public static void fillInLists() {
-    // This is for beginning test.
-    SchoolWords.add("Desk");
-    SchoolWords.add("Pencil");
-    SchoolWords.add("Crayons");
-    SchoolWords.add("Binder");
-    SchoolWords.add("Backpack");
-    SchoolWords.add("School logo");
-    SchoolWords.add("TextBook");
-
-    HomeWords.add("Couch");
-    HomeWords.add("Bed");
-    HomeWords.add("Night Light");
-    HomeWords.add("Spoon");
-    HomeWords.add("Bowl");
-    HomeWords.add("Cereal");
-    HomeWords.add("Sink");
-
-    OutsideWords.add("Pine Tree");
-    OutsideWords.add("Rock");
-    OutsideWords.add("Cars");
-    OutsideWords.add("Water");
-    OutsideWords.add("Clouds");
-    OutsideWords.add("Grass");
-    OutsideWords.add("Mountain");
-
-    // If we want to use file lists this will be the code and we need
-    // To add the relative path.
-    /*
-        * Path list1 = Paths.get(); Path list2 = Paths.get(); Path list3 = Paths.get();
-        * 
-        * Scanner schoollist = new Scanner(new File(list1.toString()));
-        * while(schoollist.hasNext()){ SchoolWords.add(schoollist.next()); }
-        * schoollist.close();
-        * 
-        * Scanner homelist = new Scanner(new File(list2.toString()));
-        * while(homelist.hasNext()){ HomeWords.add(homelist.next()); }
-        * homelist.close();
-        * 
-        * Scanner outsidelist = new Scanner(new File(list3.toString()));
-        * while(outsidelist.hasNext()){ OutsideWords.add(outsidelist.next()); }
-        * outsidelist.close();
-        */
+        if(input.equals("outside"))
+        {
+            try{
+                Scanner outsidelist = new Scanner(new File(list3.toString()));
+                while(outsidelist.hasNext()){ OutsideWords.add(outsidelist.nextLine()); }
+                outsidelist.close();
+            }
+            catch(FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+        }
     }
 }
