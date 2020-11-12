@@ -27,7 +27,7 @@ public class ScavengerHuntFragment2 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment2.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
             }
         });
     }

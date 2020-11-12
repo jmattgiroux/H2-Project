@@ -37,7 +37,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
             }
         });
 
@@ -45,7 +45,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
             }
         });
 
@@ -53,7 +53,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
             }
         });
 
@@ -61,7 +61,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
             }
         });
 
@@ -69,7 +69,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
             }
         });
     }
