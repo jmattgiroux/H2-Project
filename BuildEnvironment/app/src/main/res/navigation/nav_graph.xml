@@ -73,5 +73,20 @@
         <action
             android:id="@+id/action_scavengerHuntFragment2_to_scavengerHuntFragment1"
             app:destination="@id/scavengerHuntFragment1" />
+        <action
+            android:id="@+id/action_scavengerHuntFragment2_to_scavengerHuntFragment3"
+            app:destination="@id/scavengerHuntFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/scavengerHuntFragment3"
+        android:name="com.example.h2project.ScavengerHuntFragment3"
+        android:label="scavenger_hunt_fragment_3"
+        tools:layout="@layout/scavenger_hunt_fragment_3" >
+        <action
+            android:id="@+id/action_scavengerHuntFragment3_to_scavengerHuntFragment2"
+            app:destination="@id/scavengerHuntFragment2" />
+        <action
+            android:id="@+id/action_scavengerHuntFragment3_to_homeScreenFragment1"
+            app:destination="@id/homeScreenFragment1" />
     </fragment>
 </navigation>
