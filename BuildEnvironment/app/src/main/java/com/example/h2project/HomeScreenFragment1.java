@@ -24,6 +24,15 @@ public class HomeScreenFragment1 extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        view.findViewById(R.id.home_screen_fragment_1_button_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(HomeScreenFragment1.this)
+                        .navigate(R.id.action_homeScreenFragment1_to_scavengerHuntFragment1);
+            }
+        });
+
+
         view.findViewById(R.id.home_screen_fragment_1_button_4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

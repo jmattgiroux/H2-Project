@@ -28,8 +28,8 @@ public class ScavengerHuntFragment1 extends Fragment {
         view.findViewById(R.id.scavenger_hunt_fragment_1_button_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), HomeScreen.class);
-                startActivity(intent);
+                NavHostFragment.findNavController(ScavengerHuntFragment1.this)
+                        .navigate(R.id.action_scavengerHuntFragment1_to_homeScreenFragment1);
             }
         });
 
@@ -37,7 +37,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
+                        .navigate(R.id.action_scavengerHuntFragment1_to_scavengerHuntFragment2);
             }
         });
 
@@ -45,7 +45,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
+                        .navigate(R.id.action_scavengerHuntFragment1_to_scavengerHuntFragment2);
             }
         });
 
@@ -53,7 +53,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
+                        .navigate(R.id.action_scavengerHuntFragment1_to_scavengerHuntFragment2);
             }
         });
 
@@ -61,7 +61,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
+                        .navigate(R.id.action_scavengerHuntFragment1_to_scavengerHuntFragment2);
             }
         });
 
@@ -69,7 +69,7 @@ public class ScavengerHuntFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
-                        .navigate(R.id.action_homeScreenFragment1_to_instructionsFragment1);
+                        .navigate(R.id.action_scavengerHuntFragment1_to_scavengerHuntFragment2);
             }
         });
     }

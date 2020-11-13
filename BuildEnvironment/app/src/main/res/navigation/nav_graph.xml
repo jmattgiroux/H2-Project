@@ -49,5 +49,29 @@
         <action
             android:id="@+id/action_homeScreenFragment1_to_instructionsFragment1"
             app:destination="@id/instructionsFragment1" />
+        <action
+            android:id="@+id/action_homeScreenFragment1_to_scavengerHuntFragment1"
+            app:destination="@id/scavengerHuntFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/scavengerHuntFragment1"
+        android:name="com.example.h2project.ScavengerHuntFragment1"
+        android:label="scavenger_hunt_fragment_1"
+        tools:layout="@layout/scavenger_hunt_fragment_1" >
+        <action
+            android:id="@+id/action_scavengerHuntFragment1_to_scavengerHuntFragment2"
+            app:destination="@id/scavengerHuntFragment2" />
+        <action
+            android:id="@+id/action_scavengerHuntFragment1_to_homeScreenFragment1"
+            app:destination="@id/homeScreenFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/scavengerHuntFragment2"
+        android:name="com.example.h2project.ScavengerHuntFragment2"
+        android:label="scavenger_hunt_fragment_2"
+        tools:layout="@layout/scavenger_hunt_fragment_2" >
+        <action
+            android:id="@+id/action_scavengerHuntFragment2_to_scavengerHuntFragment1"
+            app:destination="@id/scavengerHuntFragment1" />
     </fragment>
 </navigation>
