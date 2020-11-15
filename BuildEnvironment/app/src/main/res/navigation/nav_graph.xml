@@ -85,5 +85,11 @@
         <action
             android:id="@+id/action_scavengerHuntFragment3_to_homeScreenFragment1"
             app:destination="@id/homeScreenFragment1" />
+        <action
+            android:id="@+id/action_scavengerHuntFragment3_to_scavengerHuntFragment2"
+            app:destination="@id/scavengerHuntFragment2" />
+        <action
+            android:id="@+id/action_scavengerHuntFragment3_to_scavengerHuntFragment1"
+            app:destination="@id/scavengerHuntFragment1" />
     </fragment>
 </navigation>

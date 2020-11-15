@@ -29,7 +29,7 @@ public class ScavengerHuntFragment3 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment3.this)
-                        .navigate(R.id.action_scavengerHuntFragment3_to_homeScreenFragment1);
+                        .navigate(R.id.action_scavengerHuntFragment3_to_scavengerHuntFragment2);
             }
         });
 
@@ -37,7 +37,7 @@ public class ScavengerHuntFragment3 extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment3.this)
-                        .navigate(R.id.action_scavengerHuntFragment3_to_homeScreenFragment1);
+                        .navigate(R.id.action_scavengerHuntFragment3_to_scavengerHuntFragment1);
             }
         });
 
