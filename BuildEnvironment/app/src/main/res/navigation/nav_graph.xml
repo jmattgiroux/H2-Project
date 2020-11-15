@@ -13,6 +13,15 @@
         <action
             android:id="@+id/action_instructionsFragment1_to_instructionsFragment2"
             app:destination="@id/instructionsFragment2" />
+        <action
+            android:id="@+id/action_instructionsFragment1_to_instructionsFragment3"
+            app:destination="@id/instructionsFragment3" />
+        <action
+            android:id="@+id/action_instructionsFragment1_to_instructionsFragment4"
+            app:destination="@id/instructionsFragment4" />
+        <action
+            android:id="@+id/action_instructionsFragment1_to_homeScreenFragment1"
+            app:destination="@id/homeScreenFragment1" />
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment2"
@@ -20,8 +29,8 @@
         android:label="instructions_fragment_2"
         tools:layout="@layout/instructions_fragment_2" >
         <action
-            android:id="@+id/action_instructionsFragment2_to_instructionsFragment3"
-            app:destination="@id/instructionsFragment3" />
+            android:id="@+id/action_instructionsFragment2_to_instructionsFragment1"
+            app:destination="@id/instructionsFragment1" />
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment3"
@@ -29,8 +38,8 @@
         android:label="instructions_fragment_3"
         tools:layout="@layout/instructions_fragment_3" >
         <action
-            android:id="@+id/action_instructionsFragment3_to_instructionsFragment4"
-            app:destination="@id/instructionsFragment4" />
+            android:id="@+id/action_instructionsFragment3_to_instructionsFragment1"
+            app:destination="@id/instructionsFragment1" />
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment4"
@@ -38,8 +47,8 @@
         android:label="instructions_fragment_4"
         tools:layout="@layout/instructions_fragment_4" >
         <action
-            android:id="@+id/action_instructionsFragment4_to_homeScreenFragment1"
-            app:destination="@id/homeScreenFragment1" />
+            android:id="@+id/action_instructionsFragment4_to_instructionsFragment1"
+            app:destination="@id/instructionsFragment1" />
     </fragment>
     <fragment
         android:id="@+id/homeScreenFragment1"

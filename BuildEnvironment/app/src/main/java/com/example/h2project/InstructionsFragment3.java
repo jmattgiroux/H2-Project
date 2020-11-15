@@ -24,11 +24,11 @@ public class InstructionsFragment3 extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.instructions_fragment_3_button_1).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.instructions_fragment_3_button_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(InstructionsFragment3.this)
-                        .navigate(R.id.action_instructionsFragment3_to_instructionsFragment4);
+                        .navigate(R.id.action_instructionsFragment3_to_instructionsFragment1);
             }
         });
     }

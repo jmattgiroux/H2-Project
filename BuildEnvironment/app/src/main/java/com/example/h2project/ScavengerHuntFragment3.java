@@ -48,29 +48,5 @@ public class ScavengerHuntFragment3 extends Fragment {
                         .navigate(R.id.action_scavengerHuntFragment3_to_homeScreenFragment1);
             }
         });
-
-        view.findViewById(R.id.scavenger_hunt_fragment_3_button_3).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ScavengerHuntFragment3.this)
-                        .navigate(R.id.action_scavengerHuntFragment3_to_homeScreenFragment1);
-            }
-        });
-
-        view.findViewById(R.id.scavenger_hunt_fragment_3_button_4).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ScavengerHuntFragment3.this)
-                        .navigate(R.id.action_scavengerHuntFragment3_to_homeScreenFragment1);
-            }
-        });
-
-        view.findViewById(R.id.scavenger_hunt_fragment_3_button_5).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ScavengerHuntFragment3.this)
-                        .navigate(R.id.action_scavengerHuntFragment3_to_homeScreenFragment1);
-            }
-        });
     }
 }

@@ -24,11 +24,35 @@ public class InstructionsFragment1 extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        view.findViewById(R.id.instructions_fragment_1_button_back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InstructionsFragment1.this)
+                        .navigate(R.id.action_instructionsFragment1_to_homeScreenFragment1);
+            }
+        });
+
         view.findViewById(R.id.instructions_fragment_1_button_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(InstructionsFragment1.this)
                         .navigate(R.id.action_instructionsFragment1_to_instructionsFragment2);
+            }
+        });
+
+        view.findViewById(R.id.instructions_fragment_1_button_2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InstructionsFragment1.this)
+                        .navigate(R.id.action_instructionsFragment1_to_instructionsFragment3);
+            }
+        });
+
+        view.findViewById(R.id.instructions_fragment_1_button_3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InstructionsFragment1.this)
+                        .navigate(R.id.action_instructionsFragment1_to_instructionsFragment4);
             }
         });
     }
