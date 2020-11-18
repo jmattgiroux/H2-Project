@@ -1,4 +1,11 @@
 <resources>
+
+    <!-- variables -->
+    <string name="setting_choice">school</string>
+
+
+
+
     <string name="app_name">h2project</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
