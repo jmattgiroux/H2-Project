@@ -37,7 +37,7 @@
     <!-- Fragment 2 -->
     <string name="scavenger_hunt_fragment_2_text_1">1:00</string>
     <string name="scavenger_hunt_fragment_2_text_2">*Word*</string>
-    <string name="scavenger_hunt_fragment_2_text_3">1:00</string>
+    <string name="scavenger_hunt_fragment_2_text_3">~~~</string>
     <string name="scavenger_hunt_fragment_2_button_1">Check Mark</string>
     <string name="scavenger_hunt_fragment_2_button_2">Generate New Word</string>
     <string name="scavenger_hunt_fragment_2_button_3">Quit</string>
@@ -204,7 +204,7 @@
     <string name="instructions_fragment_1_button_4">Return to Home</string>
 
     <!-- Fragment 2 -->
-    <string name="instructions_fragment_2_text_1">Welcome!</string>
+    <string name="instructions_fragment_2_text_1">Scavenger Hunt instructions</string>
     <string name="instructions_fragment_2_text_2">Play Picture Hunt</string>
     <string name="instructions_fragment_2_text_3">Play Race to Win</string>
     <string name="instructions_fragment_2_text_4">Game Instructions</string>
@@ -212,7 +212,7 @@
     <string name="instructions_fragment_2_text_6">Home Screen!7</string>
 
     <!-- Fragment 3 -->
-    <string name="instructions_fragment_3_text_1">Welcome!</string>
+    <string name="instructions_fragment_3_text_1">Picture Hunt instructions</string>
     <string name="instructions_fragment_3_text_2">Play Picture Hunt</string>
     <string name="instructions_fragment_3_text_3">Play Race to Win</string>
     <string name="instructions_fragment_3_text_4">Game Instructions</string>
@@ -220,7 +220,7 @@
     <string name="instructions_fragment_3_text_6">Home Screen!7</string>
 
     <!-- Fragment 4 -->
-    <string name="instructions_fragment_4_text_1">Welcome!</string>
+    <string name="instructions_fragment_4_text_1">Race to win instructions</string>
     <string name="instructions_fragment_4_text_2">Play Picture Hunt</string>
     <string name="instructions_fragment_4_text_3">Play Race to Win</string>
     <string name="instructions_fragment_4_text_4">Game Instructions</string>
