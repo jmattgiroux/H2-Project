@@ -1,5 +1,9 @@
 package com.example.h2project;//Author: Jeanette Eldredge
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.nio.file.Path;
@@ -23,8 +27,11 @@ public class Generator {
         fillInLists("outside");
     }
     private int count = 100;
-    public void generate(String input) {
+    public String generate(String input) {
         Random rand = new Random();
+
+        String word = "";
+
         // The random generator does number 0 - the limit so saying that
         // the lim is 6 will generate a number out of 7 numbers.
         // This will need to be changed for bigger lists.
@@ -47,28 +54,33 @@ public class Generator {
             {
 
             }
-            System.out.println(SchoolWords.get(item));
+            word = SchoolWords.get(item);
             SchoolWords.remove(item);
             count -= 1;
         }
 
         else if (input.equals("home")) {
-            System.out.println(HomeWords.get(item));
+            word = HomeWords.get(item);
             HomeWords.remove(item);
             count -= 1;
         }
 
         else if (input.equals("outside")) {
-            System.out.println(OutsideWords.get(item));
+
+            word = OutsideWords.get(item);
             OutsideWords.remove(item);
             count -= 1;
+
         }
 
         if (NWorCHK == false) {
             previousInput = input;
         }
+
+        return word;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public static void fillInLists(String input) {
         String file1 = new File("school.txt").getAbsolutePath();
         String file2 = new File("home.txt").getAbsolutePath();

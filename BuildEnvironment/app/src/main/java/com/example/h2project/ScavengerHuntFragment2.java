@@ -38,19 +38,20 @@ public class ScavengerHuntFragment2 extends Fragment {
             }
         });
 
+        //checkmark button
         view.findViewById(R.id.scavenger_hunt_fragment_2_button_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(ScavengerHuntFragment2.this)
-                        .navigate(R.id.action_scavengerHuntFragment2_to_scavengerHuntFragment3);
+                Main Thingy = new Main("school");
+                Thingy.game();
             }
         });
 
+        // Generate word
         view.findViewById(R.id.scavenger_hunt_fragment_2_button_2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(ScavengerHuntFragment2.this)
-                        .navigate(R.id.action_scavengerHuntFragment2_to_scavengerHuntFragment3);
+                new Main("school");
             }
         });
 

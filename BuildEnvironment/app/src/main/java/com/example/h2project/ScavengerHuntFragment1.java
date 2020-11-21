@@ -22,6 +22,8 @@ public class ScavengerHuntFragment1 extends Fragment {
         return inflater.inflate(R.layout.scavenger_hunt_fragment_1, container, false);
     }
 
+
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -31,6 +33,8 @@ public class ScavengerHuntFragment1 extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
                         .navigate(R.id.action_scavengerHuntFragment1_to_homeScreenFragment1);
+
+
             }
         });
 
@@ -38,6 +42,8 @@ public class ScavengerHuntFragment1 extends Fragment {
         view.findViewById(R.id.scavenger_hunt_fragment_1_button_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //new Main("school");
+
                 NavHostFragment.findNavController(ScavengerHuntFragment1.this)
                         .navigate(R.id.action_scavengerHuntFragment1_to_scavengerHuntFragment2);
             }
