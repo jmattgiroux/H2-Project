@@ -11,12 +11,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 public class ScavengerHuntFragment2 extends Fragment {
+
+
+    Generator g1 = new Generator();
+    String choice = "school";
+
+
 
     @Override
     public View onCreateView(
@@ -25,7 +32,11 @@ public class ScavengerHuntFragment2 extends Fragment {
     ) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.scavenger_hunt_fragment_2, container, false);
+
     }
+
+
+
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -38,29 +49,35 @@ public class ScavengerHuntFragment2 extends Fragment {
             }
         });
 
-        //checkmark button
-        view.findViewById(R.id.scavenger_hunt_fragment_2_button_1).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Main Thingy = new Main("school");
-                Thingy.game();
-            }
-        });
 
-        // Generate word
-        view.findViewById(R.id.scavenger_hunt_fragment_2_button_2).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new Main("school");
-            }
-        });
 
-        view.findViewById(R.id.scavenger_hunt_fragment_2_button_3).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ScavengerHuntFragment2.this)
-                        .navigate(R.id.action_scavengerHuntFragment2_to_scavengerHuntFragment3);
-            }
-        });
+            //checkmark button
+            view.findViewById(R.id.scavenger_hunt_fragment_2_button_1).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    final TextView resultTextView = (TextView) getView().findViewById(R.id.scavenger_hunt_fragment_2_text_2);
+                    String result = g1.generate(choice);
+                    resultTextView.setText(result);
+                }
+            });
+
+
+
+            // Generate word
+            view.findViewById(R.id.scavenger_hunt_fragment_2_button_2).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+
+            });
+
+            view.findViewById(R.id.scavenger_hunt_fragment_2_button_3).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    NavHostFragment.findNavController(ScavengerHuntFragment2.this)
+                            .navigate(R.id.action_scavengerHuntFragment2_to_scavengerHuntFragment3);
+                }
+            });
+        }
     }
-}

@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class ScavengerHunt extends AppCompatActivity {
 
@@ -19,6 +21,7 @@ public class ScavengerHunt extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,4 +31,6 @@ public class ScavengerHunt extends AppCompatActivity {
             }
         });
     }
+
+
 }

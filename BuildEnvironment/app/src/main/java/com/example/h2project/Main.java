@@ -28,9 +28,66 @@ import android.widget.TextView;
 
 
 public class Main extends AppCompatActivity {
-  public static int points = 0;
-  private static String choice;
 
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.scavenger_hunt_fragment_2);
+
+    changeText();
+
+
+  }
+
+  private void changeText() {}
+
+
+}
+
+  /*
+  public static int points = 0;
+  private String choice = "school"; //temporary code
+
+
+  final TextView resultTextView = (TextView) findViewById(R.id.scavenger_hunt_fragment_2_text_2);
+
+  Generator g1 = new Generator();
+  TextView text;
+
+
+
+
+    Button checkBtn = (Button) findViewById(R.id.scavenger_hunt_fragment_2_button_1);
+    checkBtn.setOnClickListener(new View.OnClickListener() {
+      public void onClick(View v) {
+        final TextView resultTextView = (TextView) findViewById(R.id.scavenger_hunt_fragment_2_text_2);
+        //String result = g1.generate(choice);
+        resultTextView.setText("Test");
+      }
+    });
+
+
+
+
+}
+
+//^Everything in this block is old stuff that should be deleted later
+   */
+
+
+
+
+
+/*
+    text = (TextView) findViewById(R.id.scavenger_hunt_fragment_2_text_2);
+
+    text.setText("literally anything");
+*/
+
+  //}
+
+
+/*
   public Main(String input) {
     choice = input;
     //game();
@@ -39,15 +96,28 @@ public class Main extends AppCompatActivity {
   public void game() {
 
 
+*/
 
-    Generator g1 = new Generator();
 
 
 
     // Need to instantiate something for findViewById but don't know what
     // java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.pm.ApplicationInfo android.content.Context.getApplicationInfo()' on a null object reference
     // at com.example.h2project.Main.game(Main.java:50)
+
+    /*setContentView(R.layout.activity_scavenger_hunt);
+
     TextView word =(TextView) findViewById(R.id.scavenger_hunt_fragment_2_text_2);
+    try {
+      word.setText(g1.generate(choice));
+    } catch (NullPointerException e) {
+      // Do something
+    }
+
+*/
+
+
+
     //word.setText(g1.generate(choice));
     //boolean loopOrQuit = false;
 
@@ -72,5 +142,5 @@ public class Main extends AppCompatActivity {
 
     }
 */
-  }
-}
+  //}
+//}
