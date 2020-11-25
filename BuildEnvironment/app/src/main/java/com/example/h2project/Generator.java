@@ -26,6 +26,8 @@ public class Generator {
         fillInLists("home");
         fillInLists("outside");
     }
+
+
     private int count = 100;
     public String generate(String input) {
         Random rand = new Random();
@@ -80,7 +82,7 @@ public class Generator {
         return word;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+
     public static void fillInLists(String input) {
         String file1 = new File("school.txt").getAbsolutePath();
         String file2 = new File("home.txt").getAbsolutePath();

@@ -6,6 +6,7 @@ package com.example.h2project;
 
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,9 +15,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class ScavengerHuntFragment2 extends Fragment {
 
 
@@ -58,6 +61,7 @@ public class ScavengerHuntFragment2 extends Fragment {
                     final TextView resultTextView = (TextView) getView().findViewById(R.id.scavenger_hunt_fragment_2_text_2);
                     String result = g1.generate(choice);
                     resultTextView.setText(result);
+                    //resultTextView.setText("New Text!"); //test
                 }
             });
 

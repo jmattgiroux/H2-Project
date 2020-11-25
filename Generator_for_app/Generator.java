@@ -85,8 +85,8 @@ public class Generator {
                 schoollist = new Scanner(new File(list1.toString()));
                 while(schoollist.hasNext()){ SchoolWords.add(schoollist.nextLine()); }
                 schoollist.close();
-            } 
             catch (FileNotFoundException e) {
+            } 
                 e.printStackTrace();
             }
         }
